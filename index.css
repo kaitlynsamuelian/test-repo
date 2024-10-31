@@ -20,6 +20,7 @@ body, html {
     z-index: 10;
     opacity: 1;
 }
+
 /*test*/
 /* Animation for curtain opening */
 @keyframes curtain-effect {
