@@ -1,0 +1,45 @@
+/* Landing Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.landing-header {
+    background-color: #444;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.landing-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.brochure, .series, .education {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.brochure, .series, .education h2 {
+    font-size: 1.8em;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 10px;
+    background-color: #009688;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}

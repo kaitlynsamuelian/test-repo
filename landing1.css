@@ -1,0 +1,129 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #ddd;
+    background-color: #111;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('membership-hero.jpg') center/cover no-repeat;
+    color: #ffd700; /* gold */
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+    color: #ffd700;
+  }
+  
+  .hero p {
+    font-size: 1.3em;
+    color: #f5f5f5;
+    margin-bottom: 1.5em;
+    max-width: 600px;
+    margin: 0 auto 1.5em;
+  }
+  
+  .hero .cta {
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    background-color: #b22222; /* dark red */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .hero .cta:hover {
+    background-color: #8b0000; /* deeper red */
+    transform: scale(1.05);
+  }
+  
+  /* Benefits Section */
+  .benefits {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #222;
+    color: #ddd;
+  }
+  
+  .benefits h2 {
+    font-size: 2.5em;
+    color: #ffd700;
+    margin-bottom: 30px;
+  }
+  
+  .benefits ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .benefits li {
+    font-size: 1.2em;
+    padding: 12px;
+    color: #f5f5f5;
+    border-bottom: 1px solid #555;
+  }
+  
+  .benefits li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #111;
+    color: #999;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  .footer a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #f5f5f5;
+  }
+  
+  /* Buttons and Links */
+  a {
+    color: #b22222;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #8b0000;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5em;
+    }
+  
+    .hero p {
+      font-size: 1.1em;
+    }
+  
+    .benefits h2 {
+      font-size: 2em;
+    }
+  }
+  
