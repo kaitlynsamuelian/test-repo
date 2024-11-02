@@ -14,20 +14,42 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('curtain.jpg') no-repeat center center;
-    background-size: cover;
-    animation: curtain-effect 2.5s ease-in-out forwards;
     z-index: 10;
+    overflow: hidden;
+    display: flex;
 }
 
-@keyframes curtain-effect {
-    0% {
-        clip-path: inset(0 50% 0 50%); /* Start with a narrow view in the center */
-    }
-    100% {
-        clip-path: inset(0 0 0 0); /* Expand to show the entire curtain */
-    }
+.curtain-left, .curtain-right {
+    width: 50%;
+    height: 100%;
+    background: url('curtain.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute; /* Change: Ensure each half starts from the center */
 }
+
+.curtain-left {
+    left: 0; /* Place on left side */
+    transform-origin: right; /* Change: Start animation from the center */
+    animation: curtain-left-open 2.5s ease-in-out forwards;
+}
+
+.curtain-right {
+    right: 0; /* Place on right side */
+    transform-origin: left; /* Change: Start animation from the center */
+    animation: curtain-right-open 2.5s ease-in-out forwards;
+}
+
+@keyframes curtain-left-open {
+    0% { transform: translateX(0); }      /* Start at center */
+    100% { transform: translateX(-100%); } /* Move outward to left */
+}
+
+@keyframes curtain-right-open {
+    0% { transform: translateX(0); }      /* Start at center */
+    100% { transform: translateX(100%); } /* Move outward to right */
+}
+
 
 
 
