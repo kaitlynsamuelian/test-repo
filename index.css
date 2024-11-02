@@ -15,7 +15,6 @@ body, html {
 #nav-ul{
     flex: 100%;
     display: flex;
-
     padding: 85px;
     list-style-type: none;
     justify-content: center;
