@@ -12,13 +12,31 @@ body, html {
     text-align: center;
 }
 
-#nav-ul{
-    flex: 100%;
+#nav-ul {
     display: flex;
-    padding: 85px;
     list-style-type: none;
-    justify-content: center;
+    padding: 0; /* Reset padding on the ul */
+    margin: 0; /* Reset margin on the ul */
+    justify-content: center; /* Center the list items */
+    background-color: #333; /* Background color for the nav bar */
 }
+
+#nav-ul li {
+    margin: 0 15px; /* Add space between nav items */
+}
+
+#nav-ul li a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding inside links */
+    display: block; /* Make links fill the li area */
+    border-radius: 4px; /* Optional: Rounded corners */
+}
+
+#nav-ul li a:hover {
+    background-color: #555; /* Change background on hover */
+}
+
 
 /* Curtain Overlay Styling */
 .curtain-left, .curtain-right {
