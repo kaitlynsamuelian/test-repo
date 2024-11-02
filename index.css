@@ -12,13 +12,6 @@ body, html {
     text-align: center;
 }
 
-#nav-ul{
-    flex: 100%;
-    display: flex;
-    padding: 85px;
-    list-style-type: none;
-    justify-content: center;
-}
 
 /* Curtain Overlay Styling */
 .curtain-left, .curtain-right {
@@ -27,6 +20,7 @@ body, html {
     background: url('curtain.jpg') no-repeat center center;
     background-size: cover;
     opacity: 1;
+    z-index: 10;
     position: absolute; /* Change: Ensure each half starts from the center */
 }
 
