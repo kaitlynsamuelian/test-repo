@@ -7,27 +7,52 @@ body, html {
     font-family: 'Arial', sans-serif;
 }
 
+#heading{
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+#nav-ul{
+    flex: 100%;
+    display: flex;
+
+    padding: 85px;
+    list-style-type: none;
+    justify-content: center;
+}
+
 /* Curtain Overlay Styling */
-.curtain-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+.curtain-left, .curtain-right {
+    width: 50%;
     height: 100%;
     background: url('curtain.jpg') no-repeat center center;
     background-size: cover;
-    animation: curtain-effect 2.5s ease-in-out forwards;
-    z-index: 10;
     opacity: 1;
+    position: absolute; /* Change: Ensure each half starts from the center */
 }
-/*test*/
-/* Animation for curtain opening */
-@keyframes curtain-effect {
-    0% {
-        clip-path: inset(0 0 0 0);
-    }
-    100% {
-        clip-path: inset(0 50% 0 50%);
-    }
+
+.curtain-left {
+    left: 0; /* Place on left side */
+    transform-origin: right; /* Change: Start animation from the center */
+    animation: curtain-left-open 2.5s ease-in-out forwards;
 }
+
+.curtain-right {
+    right: 0; /* Place on right side */
+    transform-origin: left; /* Change: Start animation from the center */
+    animation: curtain-right-open 2.5s ease-in-out forwards;
+}
+
+@keyframes curtain-left-open {
+    0% { transform: translateX(0); }      /* Start at center */
+    100% { transform: translateX(-100%); } /* Move outward to left */
+}
+
+@keyframes curtain-right-open {
+    0% { transform: translateX(0); }      /* Start at center */
+    100% { transform: translateX(100%); } /* Move outward to right */
+}
+
+
+
 
