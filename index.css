@@ -46,7 +46,3 @@ body, html {
     0% { transform: translateX(0); }      /* Start at center */
     100% { transform: translateX(100%); } /* Move outward to right */
 }
-
-
-
-
