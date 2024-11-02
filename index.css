@@ -12,6 +12,11 @@ body, html {
     text-align: center;
 }
 
+nav {
+    position: relative; /* Position the nav so z-index is effective */
+    z-index: 5; /* Lower than the curtain overlay to keep it behind */
+}
+
 #nav-ul {
     display: flex;
     list-style-type: none;
