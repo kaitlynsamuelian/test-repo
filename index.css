@@ -7,6 +7,20 @@ body, html {
     font-family: 'Arial', sans-serif;
 }
 
+#heading{
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+#nav-ul{
+    flex: 100%;
+    display: flex;
+
+    padding: 85px;
+    list-style-type: none;
+    justify-content: center;
+}
+
 /* Curtain Overlay Styling */
 .curtain-left, .curtain-right {
     width: 50%;
