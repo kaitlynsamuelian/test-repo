@@ -94,3 +94,46 @@ nav {
     max-width: 1200px;
     margin: auto;
 }
+
+.grid article, .grid aside {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Article Content */
+article h1 {
+    font-size: 2em;
+    color: var(--gold);
+    font-family: 'Arial', sans-serif;
+}
+
+article p {
+    font-size: 1em;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Styling for Aside */
+aside h2 {
+    font-size: 1.8em;
+    color: var(--primary-red);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer for additional orchestral details */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: var(--dark-bg);
+    color: var(--text-light);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+footer p {
+    margin: 0;
+}
