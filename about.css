@@ -6,27 +6,71 @@ body, html {
     font-family: 'Arial', sans-serif;
 }
 
+#heading{
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+    font-size: 20px; 
+    color: var(--gold);
+}
+
 /* Curtain Overlay Styling */
-.curtain-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+.curtain-left, .curtain-right {
+    width: 50%;
     height: 100%;
     background: url('curtain.jpg') no-repeat center center;
     background-size: cover;
-    animation: curtain-effect 2.5s ease-in-out forwards;
-    z-index: 10;
     opacity: 1;
+    z-index: 10;
+    position: absolute; /* Change: Ensure each half starts from the center */
 }
 
-/* Animation for curtain opening */
-@keyframes curtain-effect {
-    0% {
-        clip-path: inset(0 0 0 0);
-    }
-    100% {
-        clip-path: inset(0 50% 0 50%);
-    }
+.curtain-left {
+    left: 0; /* Place on left side */
+    transform-origin: right; /* Change: Start animation from the center */
+    animation: curtain-left-open 2.5s ease-in-out forwards;
 }
 
+.curtain-right {
+    right: 0; /* Place on right side */
+    transform-origin: left; /* Change: Start animation from the center */
+    animation: curtain-right-open 2.5s ease-in-out forwards;
+}
+
+@keyframes curtain-left-open {
+    0% { transform: translateX(0); }      /* Start at center */
+    100% { transform: translateX(-100%); } /* Move outward to left */
+}
+
+@keyframes curtain-right-open {
+    0% { transform: translateX(0); }      /* Start at center */
+    100% { transform: translateX(100%); } /* Move outward to right */
+}
+
+/* Navbar Styling */
+nav {
+    position: relative; /* Position the nav so z-index is effective */
+    z-index: 5; /* Lower than the curtain overlay to keep it behind */
+}
+
+#nav-ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0; /* Reset padding on the ul */
+    margin: 0; /* Reset margin on the ul */
+    justify-content: center; /* Center the list items */
+    background-color: #333; /* Background color for the nav bar */
+    font-family: Helvetica, Arial, sans-serif; 
+}
+
+#nav-ul li {
+    margin: 0 15px; /* Add space between nav items */
+}
+
+#nav-ul li a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding inside links */
+    display: block; /* Make links fill the li area */
+    border-radius: 4px; /* Optional: Rounded corners */
+    font-size: 18px; 
+}
