@@ -159,13 +159,6 @@ article p {
     line-height: 1.6;
 }
 
-/* Styling for Aside */
-aside h2 {
-    font-size: 1.8em;
-    color: var(--primary-red);
-    font-family: 'Arial', sans-serif;
-}
-
 /* Footer for additional orchestral details */
 footer {
     position: absolute;

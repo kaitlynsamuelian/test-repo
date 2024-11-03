@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Georgia', serif;
+    font-family: 'Arial', sans-serif;
     color: #e6e6e6;
     overflow: auto;
     background-color: #1e1e1e;
@@ -15,6 +15,46 @@ body, html {
     --dark-bg: #1e1e1e;
     --gold: #d4af37;
     --text-light: #e6e6e6;
+}
+
+#heading{
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+    font-size: 20px; 
+    color: var(--gold);
+}
+
+/* Curtain Overlay Styling */
+.curtain-left, .curtain-right {
+    width: 50%;
+    height: 100%;
+    background: url('curtain.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 1;
+    z-index: 10;
+    position: absolute; /* Change: Ensure each half starts from the center */
+}
+
+.curtain-left {
+    left: 0; /* Place on left side */
+    transform-origin: right; /* Change: Start animation from the center */
+    animation: curtain-left-open 2.5s ease-in-out forwards;
+}
+
+.curtain-right {
+    right: 0; /* Place on right side */
+    transform-origin: left; /* Change: Start animation from the center */
+    animation: curtain-right-open 2.5s ease-in-out forwards;
+}
+
+@keyframes curtain-left-open {
+    0% { transform: translateX(0); }      /* Start at center */
+    100% { transform: translateX(-100%); } /* Move outward to left */
+}
+
+@keyframes curtain-right-open {
+    0% { transform: translateX(0); }      /* Start at center */
+    100% { transform: translateX(100%); } /* Move outward to right */
 }
 
 /* Logo Styling */
@@ -77,7 +117,7 @@ nav {
 .content h1 {
     font-size: 3.5em;
     color: var(--gold);
-    font-family: 'Times New Roman', serif;
+    font-family: 'Arial', sans-serif;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
     margin-top: 5%;
 }
@@ -110,20 +150,13 @@ nav {
 article h1 {
     font-size: 2em;
     color: var(--gold);
-    font-family: 'Times New Roman', serif;
+    font-family: 'Arial', sans-serif;
 }
 
 article p {
     font-size: 1em;
     color: var(--text-light);
     line-height: 1.6;
-}
-
-/* Styling for Aside */
-aside h2 {
-    font-size: 1.8em;
-    color: var(--primary-red);
-    font-family: 'Georgia', serif;
 }
 
 /* Footer for additional orchestral details */
