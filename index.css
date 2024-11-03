@@ -10,6 +10,7 @@ body, html {
 #heading{
     font-family: 'Helvetica', sans-serif;
     text-align: center;
+    font-size: 30px; 
 }
 
 
@@ -45,7 +46,3 @@ body, html {
     0% { transform: translateX(0); }      /* Start at center */
     100% { transform: translateX(100%); } /* Move outward to right */
 }
-
-
-
-

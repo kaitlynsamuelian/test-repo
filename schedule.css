@@ -1,33 +1,111 @@
-/* Reset basic margins and padding */
+/* Reset and Color Theme Variables */
+:root {
+    --primary-red: #b22222;
+    --dark-bg: #1e1e1e;
+    --gold: #d4af37;
+    --text-light: #e6e6e6;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    font-family: 'Georgia', serif;
+    color: var(--text-light);
+    background-color: var(--dark-bg);
+}
+
+/* Navbar Styling */
+nav {
+    z-index: 5;
+}
+
+#nav-ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-ul li {
+    margin: 0 15px;
+}
+
+#nav-ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+#nav-ul li a:hover {
+    background-color: #555;
+}
+
+/* Content Header */
+.content {
+    text-align: center;
+    padding: 20px;
+    z-index: 15;
+    position: relative;
+}
+
+.content h1 {
+    font-size: 3.5em;
+    color: var(--gold);
+    font-family: 'Times New Roman', serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin-top: 5%;
+}
+
+.content p {
+    font-size: 1.2em;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+/* Main Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid article, .grid aside {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Article and Aside Styling */
+article h1, article h2 {
+    color: var(--gold);
+    font-family: 'Times New Roman', serif;
+}
+
+article h3 {
+    font-size: 1.5em;
+    color: var(--primary-red);
+}
+
+article p, aside p {
+    font-size: 1em;
+    color: var(--text-light);
+}
+
+/* Footer Styling */
+footer {
+    background: var(--dark-bg);
+    color: var(--text-light);
+    padding: 10px;
+    text-align: center;
     font-family: 'Arial', sans-serif;
 }
-
-/* Curtain Overlay Styling */
-.curtain-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('curtain.jpg') no-repeat center center;
-    background-size: cover;
-    animation: curtain-effect 2.5s ease-in-out forwards;
-    z-index: 10;
-    opacity: 1;
-}
-/*test*/
-/* Animation for curtain opening */
-@keyframes curtain-effect {
-    0% {
-        clip-path: inset(0 0 0 0);
-    }
-    100% {
-        clip-path: inset(0 50% 0 50%);
-    }
-}
-
