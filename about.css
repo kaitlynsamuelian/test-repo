@@ -2,8 +2,18 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
     font-family: 'Arial', sans-serif;
+    color: #e6e6e6;
+    overflow: auto;
+    background-color: #1e1e1e;
+}
+
+/* Color Theme Variables */
+:root {
+    --primary-red: #b22222;
+    --dark-bg: #1e1e1e;
+    --gold: #d4af37;
+    --text-light: #e6e6e6;
 }
 
 #heading{
@@ -73,4 +83,14 @@ nav {
     display: block; /* Make links fill the li area */
     border-radius: 4px; /* Optional: Rounded corners */
     font-size: 18px; 
+}
+
+/* Grid Layout for Main Content */
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
 }

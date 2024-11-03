@@ -3,8 +3,18 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
     font-family: 'Arial', sans-serif;
+    color: #e6e6e6;
+    overflow: auto;
+    background-color: #1e1e1e;
+}
+
+/* Color Theme Variables */
+:root {
+    --primary-red: #b22222;
+    --dark-bg: #1e1e1e;
+    --gold: #d4af37;
+    --text-light: #e6e6e6;
 }
 
 #heading{
@@ -13,7 +23,6 @@ body, html {
     font-size: 20px; 
     color: var(--gold);
 }
-
 
 /* Curtain Overlay Styling */
 .curtain-left, .curtain-right {
@@ -46,4 +55,129 @@ body, html {
 @keyframes curtain-right-open {
     0% { transform: translateX(0); }      /* Start at center */
     100% { transform: translateX(100%); } /* Move outward to right */
+}
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--gold);
+    z-index: 15;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Navbar Styling */
+nav {
+    position: relative; /* Position the nav so z-index is effective */
+    z-index: 5; /* Lower than the curtain overlay to keep it behind */
+}
+
+#nav-ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0; /* Reset padding on the ul */
+    margin: 0; /* Reset margin on the ul */
+    justify-content: center; /* Center the list items */
+    background-color: #333; /* Background color for the nav bar */
+    font-family: Helvetica, Arial, sans-serif; 
+}
+
+#nav-ul li {
+    margin: 0 15px; /* Add space between nav items */
+}
+
+#nav-ul li a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding inside links */
+    display: block; /* Make links fill the li area */
+    border-radius: 4px; /* Optional: Rounded corners */
+    font-size: 18px; 
+}
+
+#nav-ul li a:hover {
+    background-color: #555; /* Change background on hover */
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    z-index: 15;
+    position: relative;
+}
+
+.content h1 {
+    font-size: 3.5em;
+    color: var(--gold);
+    font-family: 'Times New Roman', serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin-top: 5%;
+}
+
+.content p {
+    font-size: 1.2em;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Grid Layout for Main Content */
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid article, .grid aside {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Article Content */
+article h1 {
+    font-size: 2em;
+    color: var(--gold);
+    font-family: 'Arial', sans-serif;
+}
+
+article p {
+    font-size: 1em;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Styling for Aside */
+aside h2 {
+    font-size: 1.8em;
+    color: var(--primary-red);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer for additional orchestral details */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: var(--dark-bg);
+    color: var(--text-light);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+footer p {
+    margin: 0;
 }
