@@ -15,7 +15,10 @@ body, html {
     font-size: 20px; 
     color: #d4af37;
 }
-
+.content a{
+    color:#d4af37
+}
+/* Curtain Overlay Styling */
 /* Curtain Overlay Styling */
 .curtain-left, .curtain-right {
     width: 50%;
@@ -104,7 +107,7 @@ nav {
     text-align: center;
     padding: 40px; /* Keep the increased padding */
     margin: 0 50px 50px; /* Remove top margin completely */
-    z-index: 15;
+    z-index: 5;
     position: relative;
 }
 
@@ -156,17 +159,5 @@ article p {
     font-size: 1em;
     color: #e6e6e6;
     line-height: 1.6;
-}
-
-/* Footer for additional orchestral details */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #1e1e1e;
-    color: #e6e6e6;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
 }
 
