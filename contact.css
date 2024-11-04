@@ -9,19 +9,12 @@ body, html {
     background-color: #1e1e1e;
 }
 
-/* Color Theme Variables */
-:root {
-    --primary-red: #b22222;
-    --dark-bg: #1e1e1e;
-    --gold: #d4af37;
-    --text-light: #e6e6e6;
-}
-
-#heading{
+/* Color Theme */
+#heading {
     font-family: 'Helvetica', sans-serif;
     text-align: center;
     font-size: 20px; 
-    color: var(--gold);
+    color: #d4af37; /* Gold color */
 }
 
 /* Curtain Overlay Styling */
@@ -64,7 +57,7 @@ body, html {
     left: 20px;
     font-size: 1.5em;
     font-weight: bold;
-    color: var(--gold);
+    color: #d4af37; /* Gold color */
     z-index: 15;
     font-family: 'Times New Roman', serif;
 }
@@ -106,33 +99,33 @@ nav {
 .contact-info {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #e6e6e6; /* Light text color */
     max-width: 600px;
     margin: 0 auto;
-  }
-  
-  .contact-info p {
+}
+
+.contact-info p {
     margin: 0.5em 0;
-  }
-  
-  .contact-info h3 {
+}
+
+.contact-info h3 {
     margin-top: 1em;
-    color: var(--gold);
-  }
-  
-  .contact-info strong {
+    color: #d4af37; /* Gold color */
+}
+
+.contact-info strong {
     font-weight: bold;
-  }
-  
-  .contact-info a {
-    color: var(--gold);
+}
+
+.contact-info a {
+    color: #d4af37; /* Gold color */
     text-decoration: none;
-  }
-  
-  .contact-info a:hover {
+}
+
+.contact-info a:hover {
     text-decoration: underline;
-  }
-  
+}
+
 /* Grid Layout for Main Content */
 .grid {
     display: grid;
@@ -153,13 +146,13 @@ nav {
 /* Article Content */
 article h1 {
     font-size: 2em;
-    color: var(--gold);
+    color: #d4af37; /* Gold color */
     font-family: 'Arial', sans-serif;
 }
 
 article p {
     font-size: 1em;
-    color: var(--text-light);
+    color: #e6e6e6; /* Light text color */
     line-height: 1.6;
 }
 
@@ -168,8 +161,8 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: var(--dark-bg);
-    color: var(--text-light);
+    background: #1e1e1e; /* Dark background */
+    color: #e6e6e6; /* Light text color */
     padding: 10px;
     text-align: center;
     font-family: 'Arial', sans-serif;
