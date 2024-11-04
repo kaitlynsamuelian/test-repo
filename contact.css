@@ -103,32 +103,36 @@ nav {
 }
 
 /* Main Content */
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    z-index: 15;
-    position: relative;
-}
-
-.content h1 {
-    font-size: 3.5em;
+.contact-info {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-info p {
+    margin: 0.5em 0;
+  }
+  
+  .contact-info h3 {
+    margin-top: 1em;
     color: var(--gold);
-    font-family: 'Arial', sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-    margin-top: 5%;
-}
-
-.content p {
-    font-size: 1.2em;
-    color: var(--text-light);
-    margin-bottom: 20px;
-    font-family: 'Arial', sans-serif;
-}
-
+  }
+  
+  .contact-info strong {
+    font-weight: bold;
+  }
+  
+  .contact-info a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
 /* Grid Layout for Main Content */
 .grid {
     display: grid;
