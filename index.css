@@ -153,7 +153,36 @@ article p {
     color: #e6e6e6;
     line-height: 1.6;
 }
+/* General section styling */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+/* Unique styling for each section */
+.season-overview h1 {
+    color: #d4af37;
+    font-size: 2em;
+}
+.concert-experience h2 {
+    color: #d4af37;
+    font-size: 1.8em;
+}
+
+.guild-shop h2 {
+    color: #d4af37;
+    font-size: 1.8em;
+    text-decoration: underline; /* Example visual differentiation */
+}
+
+/* Additional content-specific styles */
+.guild-shop p {
+    color: #e6e6e6;
+    line-height: 1.6;
+}
 /* Footer for additional orchestral details */
 footer {
     position: absolute;

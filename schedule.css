@@ -141,6 +141,26 @@ article p, aside p {
     color: var(--text-light);
 }
 
+/*images*/
+.image-container {
+    text-align: center; /* Center the image and caption */
+    margin: 20px auto; /* Optional: center the container itself */
+}
+
+.IMG {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    display: block; /* Ensures it behaves like a block element */
+}
+
+.image-caption {
+    font-size: 1em; /* Caption font size */
+    color: #e6e6e6; /* Caption color */
+    margin-top: 5px; /* Space between image and caption */
+}
+
+
 /* Footer Styling */
 footer {
     background: var(--dark-bg);
