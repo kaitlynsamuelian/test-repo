@@ -127,18 +127,19 @@ nav {
 /* Grid Layout for Main Content */
 .grid {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 10fr;
     gap: 20px;
     padding: 40px;
     max-width: 1200px;
     margin: auto;
 }
 
-.grid article, .grid aside {
+.grid article {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 /* Article Content */
@@ -163,9 +164,32 @@ section {
 }
 
 /* Unique styling for each section */
-.season-overview h1 {
-    color: #d4af37;
-    font-size: 2em;
+/* Flex styling for list items in columns */
+.season-overview ul {
+    display: flex;           /* Enable flex layout */
+    flex-direction: row;      /* Arrange items in a row */
+    justify-content: center;  /* Center items horizontally */
+    padding: 0;               /* Remove default padding */
+    list-style-type: none;    /* Remove bullets */
+    gap: 20px;                /* Space between columns */
+    text-align: center;       /* Center text within each column */
+}
+
+/* Style individual list items */
+.season-overview ul li {
+    display: flex;            /* Center content within each list item */
+    flex-direction: column;
+    align-items: center;
+}
+.season-overview .season-img {
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 10px; /* Space between image and list item text */
+}
+.season-overview .other-img {
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 10px; /* Space between image and list item text */
 }
 .concert-experience h2 {
     color: #d4af37;
