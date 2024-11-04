@@ -1,3 +1,4 @@
+/* General Styling */
 body, html {
     margin: 0;
     padding: 0;
@@ -8,19 +9,11 @@ body, html {
     background-color: #1e1e1e;
 }
 
-/* Color Theme Variables */
-:root {
-    --primary-red: #b22222;
-    --dark-bg: #1e1e1e;
-    --gold: #d4af37;
-    --text-light: #e6e6e6;
-}
-
-#heading{
+#heading {
     font-family: 'Helvetica', sans-serif;
     text-align: center;
     font-size: 20px; 
-    color: var(--gold);
+    color: #d4af37; /* gold */
 }
 
 /* Curtain Overlay Styling */
@@ -31,58 +24,58 @@ body, html {
     background-size: cover;
     opacity: 1;
     z-index: 10;
-    position: absolute; /* Change: Ensure each half starts from the center */
+    position: absolute;
 }
 
 .curtain-left {
-    left: 0; /* Place on left side */
-    transform-origin: right; /* Change: Start animation from the center */
+    left: 0;
+    transform-origin: right;
     animation: curtain-left-open 2.5s ease-in-out forwards;
 }
 
 .curtain-right {
-    right: 0; /* Place on right side */
-    transform-origin: left; /* Change: Start animation from the center */
+    right: 0;
+    transform-origin: left;
     animation: curtain-right-open 2.5s ease-in-out forwards;
 }
 
 @keyframes curtain-left-open {
-    0% { transform: translateX(0); }      /* Start at center */
-    100% { transform: translateX(-100%); } /* Move outward to left */
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
 
 @keyframes curtain-right-open {
-    0% { transform: translateX(0); }      /* Start at center */
-    100% { transform: translateX(100%); } /* Move outward to right */
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
 }
 
 /* Navbar Styling */
 nav {
-    position: relative; /* Position the nav so z-index is effective */
-    z-index: 5; /* Lower than the curtain overlay to keep it behind */
+    position: relative;
+    z-index: 5;
 }
 
 #nav-ul {
     display: flex;
     list-style-type: none;
-    padding: 0; /* Reset padding on the ul */
-    margin: 0; /* Reset margin on the ul */
-    justify-content: center; /* Center the list items */
-    background-color: #333; /* Background color for the nav bar */
-    font-family: Helvetica, Arial, sans-serif; 
+    padding: 0;
+    margin: 0;
+    justify-content: center; 
+    background-color: #333;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #nav-ul li {
-    margin: 0 15px; /* Add space between nav items */
+    margin: 0 15px;
 }
 
 #nav-ul li a {
-    color: white; /* Link text color */
-    text-decoration: none; /* Remove underline */
-    padding: 10px 20px; /* Add padding inside links */
-    display: block; /* Make links fill the li area */
-    border-radius: 4px; /* Optional: Rounded corners */
-    font-size: 18px; 
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 4px;
+    font-size: 18px;
 }
 
 /* Grid Layout for Main Content */
@@ -105,23 +98,23 @@ nav {
 /* Article Content */
 article h1 {
     font-size: 2em;
-    color: var(--gold);
+    color: #d4af37;
     font-family: 'Arial', sans-serif;
 }
 
 article p {
     font-size: 1em;
-    color: var(--text-light);
+    color: #e6e6e6;
     line-height: 1.6;
 }
 
-/* Footer for additional orchestral details */
+/* Footer Styling */
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: var(--dark-bg);
-    color: var(--text-light);
+    background: #1e1e1e;
+    color: #e6e6e6;
     padding: 10px;
     text-align: center;
     font-family: 'Arial', sans-serif;
