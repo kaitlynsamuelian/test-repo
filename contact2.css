@@ -1,11 +1,15 @@
 /* Reset basic margins and padding */
+* {
+    margin: 0; /* Reset margin for all elements */
+    padding: 0; /* Reset padding for all elements */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
 body, html {
-    margin: 0;
-    padding: 0;
     height: 100%;
     font-family: 'Arial', sans-serif;
     color: #e6e6e6;
-    overflow: auto;
+    overflow: hidden; /* Prevent scroll until curtains open */
     background-color: #1e1e1e;
 }
 
@@ -23,31 +27,31 @@ body, html {
     height: 100%;
     background: url('curtain.jpg') no-repeat center center;
     background-size: cover;
-    opacity: 1;
     z-index: 10;
-    position: absolute; /* Change: Ensure each half starts from the center */
+    position: absolute;
 }
 
 .curtain-left {
-    left: 0; /* Place on left side */
-    transform-origin: right; /* Change: Start animation from the center */
+    left: 0;
+    transform-origin: right;
     animation: curtain-left-open 2.5s ease-in-out forwards;
 }
 
 .curtain-right {
-    right: 0; /* Place on right side */
-    transform-origin: left; /* Change: Start animation from the center */
+    right: 0;
+    transform-origin: left;
     animation: curtain-right-open 2.5s ease-in-out forwards;
 }
 
+/* Keyframes for curtain opening */
 @keyframes curtain-left-open {
-    0% { transform: translateX(0); }      /* Start at center */
-    100% { transform: translateX(-100%); } /* Move outward to left */
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
 
 @keyframes curtain-right-open {
-    0% { transform: translateX(0); }      /* Start at center */
-    100% { transform: translateX(100%); } /* Move outward to right */
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
 }
 
 /* Logo Styling */
@@ -64,39 +68,35 @@ body, html {
 
 /* Navbar Styling */
 nav {
-    position: relative; /* Position the nav so z-index is effective */
-    z-index: 5; /* Lower than the curtain overlay to keep it behind */
+    position: relative;
+    z-index: 5;
 }
 
 #nav-ul {
     display: flex;
     list-style-type: none;
-    padding: 0; /* Reset padding on the ul */
-    margin: 0; /* Reset margin on the ul */
     justify-content: center; /* Center the list items */
-    background-color: #333; /* Background color for the nav bar */
-    font-family: Helvetica, Arial, sans-serif; 
+    background-color: #333;
 }
 
 #nav-ul li {
-    margin: 0 15px; /* Add space between nav items */
+    margin: 0 15px; /* Space between nav items */
 }
 
 #nav-ul li a {
-    color: white; /* Link text color */
-    text-decoration: none; /* Remove underline */
-    padding: 10px 20px; /* Add padding inside links */
-    display: block; /* Make links fill the li area */
-    border-radius: 4px; /* Optional: Rounded corners */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 4px;
     font-size: 18px; 
 }
 
 #nav-ul li a:hover {
-    background-color: #555; /* Change background on hover */
+    background-color: #555;
 }
 
 /* Main Content */
-
 .contact-info {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -159,9 +159,22 @@ article p {
 }
 
 .img {
-    width: 100%; /* Adjust to fit container */
-    max-width: 800px; /* Maintain maximum width */
+    width: 400px;
     height: auto;
 }
 
+/* Footer for additional orchestral details */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #1e1e1e; /* Dark background */
+    color: #e6e6e6; /* Light text color */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
 
+footer p {
+    margin: 0;
+}
