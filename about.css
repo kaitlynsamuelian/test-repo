@@ -97,13 +97,13 @@ nav {
 
 /* Article and Aside Styling */
 article h1, article h2 {
-    color: var(--gold);
+    color: #d4af37;
     font-family: 'Arial', sans-serif;
 }
 
 article h3 {
     font-size: 1.5em;
-    color: var(--primary-red);
+    color: #d4af37;
 }
 
 article p, aside p {
