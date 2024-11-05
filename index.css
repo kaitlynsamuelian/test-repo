@@ -240,3 +240,82 @@ footer p {
 .grid a:hover {
     background-color: #555; /* Optional: darken background on hover */
 }
+
+/* Default styles for larger screens (desktop) */
+/* No media query needed as this is the default layout */
+
+/* Tablet: Screens between 768px and 1024px */
+@media (max-width: 1024px) {
+    #heading {
+        font-size: 18px;
+    }
+
+    .curtain-left, .curtain-right {
+        width: 100%; /* Make curtains cover the screen width */
+        height: 50%; /* Adjust the height for smaller screens */
+    }
+
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .content h1 {
+        font-size: 3em; /* Adjust header size */
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Switch to a single-column layout */
+        padding: 20px;
+    }
+
+    .grid article {
+        padding: 15px;
+    }
+
+    /* Reduce padding/margin for sections */
+    section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Mobile: Screens 767px wide and smaller */
+@media (max-width: 767px) {
+    #heading {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 1em;
+        top: 10px; /* Adjust spacing */
+        left: 10px;
+    }
+
+    #nav-ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+    }
+
+    #nav-ul li {
+        margin: 10px 0; /* Increase space between items */
+    }
+
+    .content h1 {
+        font-size: 2.5em; /* Further adjust header size */
+    }
+
+    .content p {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Single-column layout */
+        padding: 10px;
+    }
+
+    footer {
+        position: static;
+        padding: 20px 10px;
+    }
+}
