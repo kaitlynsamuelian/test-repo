@@ -1,18 +1,11 @@
-/* Reset and Color Theme Variables */
-:root {
-    --primary-red: #b22222;
-    --dark-bg: #1e1e1e;
-    --gold: #d4af37;
-    --text-light: #e6e6e6;
-}
-
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Arial', sans-serif;
-    color: var(--text-light);
-    background-color: var(--dark-bg);
+    color: #e6e6e6;
+    overflow: auto;
+    background-color: #1e1e1e;
 }
 
 #heading{
