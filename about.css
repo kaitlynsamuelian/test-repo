@@ -16,6 +16,11 @@ body, html {
     color: #d4af37; /* gold */
 }
 
+h2 {
+    font-size: 1.8em;
+    color: #d4af37;
+}
+
 /* Curtain Overlay Styling */
 .curtain-left, .curtain-right {
     width: 50%;

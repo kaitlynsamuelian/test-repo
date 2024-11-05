@@ -117,6 +117,11 @@ nav {
     margin-top: 5%;
 }
 
+h2 {
+    font-size: 1.8em;
+    color: #d4af37;
+}
+
 .content p {
     font-size: 1.2em;
     color: #e6e6e6;

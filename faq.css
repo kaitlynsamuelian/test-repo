@@ -15,9 +15,16 @@ body, html {
     font-size: 20px; 
     color: #d4af37;
 }
+
+h2 {
+    font-size: 1.8em;
+    color: #d4af37;
+}
+
 .content a{
     color:#d4af37
 }
+
 /* Curtain Overlay Styling */
 /* Curtain Overlay Styling */
 .curtain-left, .curtain-right {

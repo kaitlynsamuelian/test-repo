@@ -14,7 +14,13 @@ body, html {
     font-family: 'Helvetica', sans-serif;
     text-align: center;
     font-size: 20px; 
-    color: #d4af37; /* Gold color */
+    color:
+     #d4af37; /* Gold color */
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #d4af37;
 }
 
 /* Curtain Overlay Styling */
