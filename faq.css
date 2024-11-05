@@ -166,9 +166,28 @@ article p {
     line-height: 1.6;
 }
 
-.img {
+.IMG {
     width: 100%; /* Adjust to fit container */
     height: auto;
+}
+.image-caption {
+    font-size: 0.9em;
+    color: #d4af37;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Ticket Images Styling */
+.ticket-image {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center the images */
+    margin-top: 30px; /* Space above the images */
+}
+
+.ticket-img {
+    width: 30%; /* Adjust width to fit three images in a row */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Add space between images */
 }
 
 /* Tablets (1024px and below) */
