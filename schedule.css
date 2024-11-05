@@ -162,3 +162,95 @@ footer {
     text-align: center;
     font-family: 'Arial', sans-serif;
 }
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    #heading {
+        font-size: 18px;
+    }
+
+    .content h1 {
+        font-size: 2.5em; /* Adjust heading size */
+        margin-top: 10%; /* Add some margin at the top */
+    }
+
+    .content p {
+        font-size: 1em; /* Adjust paragraph font size */
+    }
+
+    #nav-ul li {
+        margin: 0 10px; /* Reduce margin between nav items */
+    }
+
+    #nav-ul li a {
+        font-size: 16px; /* Adjust link font size */
+        padding: 8px 15px; /* Adjust padding */
+    }
+
+    .grid {
+        padding: 20px;
+        gap: 15px; /* Reduce gap between grid items */
+    }
+
+    .grid article, .grid aside {
+        padding: 15px; /* Adjust padding */
+    }
+
+    article h1, article h2 {
+        font-size: 1.8em; /* Adjust article heading sizes */
+    }
+
+    article h3 {
+        font-size: 1.3em; /* Adjust h3 size */
+    }
+
+    .image-caption {
+        font-size: 0.9em; /* Adjust caption size */
+    }
+}
+
+/* Mobile (767px and below) */
+@media (max-width: 767px) {
+    #heading {
+        font-size: 16px; /* Adjust heading size */
+    }
+
+    .content {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .content h1 {
+        font-size: 2em; /* Further adjust heading size */
+    }
+
+    .content p {
+        font-size: 0.9em; /* Smaller font size */
+    }
+
+    #nav-ul {
+        flex-direction: column; /* Stack nav items */
+        padding: 5px; /* Adjust padding */
+    }
+
+    #nav-ul li {
+        margin: 5px 0; /* Adjust margin for stacked items */
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Stack columns on mobile */
+        padding: 10px;
+        gap: 10px; /* Reduce gap between items */
+    }
+
+    .grid article, .grid aside {
+        padding: 10px; /* Adjust padding for articles/aside */
+    }
+
+    article h1, article h2 {
+        font-size: 1.5em; /* Adjust article heading sizes */
+    }
+
+    article h3 {
+        font-size: 1.2em; /* Further adjust h3 size */
+    }
+}

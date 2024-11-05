@@ -145,3 +145,53 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    #heading {
+        font-size: 18px;
+    }
+
+    #nav-ul li a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .grid {
+        grid-template-columns: 2fr 1fr;
+        padding: 30px;
+    }
+
+    .grid article, .grid aside {
+        padding: 15px;
+    }
+}
+
+/* Mobile (767px and below) */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+
+    #heading {
+        font-size: 16px;
+    }
+
+    #nav-ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #nav-ul li {
+        margin: 10px 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .grid article, .grid aside {
+        padding: 10px;
+    }
+}

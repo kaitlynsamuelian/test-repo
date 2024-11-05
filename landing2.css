@@ -32,3 +32,39 @@ body {
     font-size: 1.5em;
     color: #f5f5f5;
 }
+
+/* Responsive Adjustments */
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    .congrats-message {
+        padding: 30px;
+    }
+
+    .congrats-message h1 {
+        font-size: 2em;
+    }
+
+    .congrats-message p {
+        font-size: 1.3em;
+    }
+}
+
+/* Mobile (767px and below) */
+@media (max-width: 767px) {
+    body {
+        padding: 20px;
+    }
+
+    .congrats-message {
+        padding: 20px;
+    }
+
+    .congrats-message h1 {
+        font-size: 1.8em;
+    }
+
+    .congrats-message p {
+        font-size: 1.1em;
+    }
+}
