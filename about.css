@@ -95,17 +95,39 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Article Content */
-article h1 {
-    font-size: 2em;
-    color: #d4af37;
+/* Article and Aside Styling */
+article h1, article h2 {
+    color: var(--gold);
     font-family: 'Arial', sans-serif;
 }
 
-article p {
+article h3 {
+    font-size: 1.5em;
+    color: var(--primary-red);
+}
+
+article p, aside p {
     font-size: 1em;
-    color: #e6e6e6;
-    line-height: 1.6;
+    color: var(--text-light);
+}
+
+/*images*/
+.image-container {
+    text-align: center; /* Center the image and caption */
+    margin: 20px auto; /* Optional: center the container itself */
+}
+
+.IMG {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    display: block; /* Ensures it behaves like a block element */
+}
+
+.image-caption {
+    font-size: 1em; /* Caption font size */
+    color: #e6e6e6; /* Caption color */
+    margin-top: 5px; /* Space between image and caption */
 }
 
 /* Footer Styling */
