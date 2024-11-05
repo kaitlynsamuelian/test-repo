@@ -168,6 +168,22 @@ article p {
     width: 100%; /* Adjust to fit container */
     height: auto;
 }
+/* Main layout for images in a row */
+.image-row {
+    display: flex;
+    flex-direction: row; /* Arrange images in a row */
+    justify-content: center; /* Center the images */
+    gap: 10px; /* Space between images */
+}
+
+.img2 {
+    width: 200px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+
+
 
 /* Tablets (1024px and below) */
 @media (max-width: 1024px) {
@@ -201,6 +217,14 @@ article p {
 
     .contact-info {
         padding: 20px;
+    }
+    .image-row {
+        flex-direction: row; /* Keep in a row for tablets */
+        gap: 8px;
+    }
+
+    .img {
+        width: 150px; /* Slightly smaller images on tablets */
     }
 }
 
@@ -245,5 +269,13 @@ article p {
 
     .contact-info p {
         font-size: 0.9em;
+    }
+    .image-row {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        gap: 10px;
+    }
+
+    .img {
+        width: 100%; /* Make images responsive to screen width */
     }
 }
