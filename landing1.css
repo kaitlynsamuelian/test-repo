@@ -1,22 +1,19 @@
-/* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #ddd;
-    background-color: #111;
-  }
+/* Reset basic margins and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  color: #e6e6e6;
+  overflow: auto;
+  background-color: #1e1e1e;
+}
 
   #heading{
     font-family: 'Helvetica', sans-serif;
     text-align: center;
     font-size: 20px; 
-    color: var(--gold);
+    color: #ffd700;
 }
 
 /* Curtain Overlay Styling */

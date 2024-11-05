@@ -112,11 +112,9 @@ nav {
 }
 
 .content h1 {
-    font-size: 3.5em;
     color: #d4af37;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Arial', sans-serif;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-    margin-top: 5%;
 }
 
 .content p {
@@ -161,3 +159,7 @@ article p {
     line-height: 1.6;
 }
 
+.img {
+    width: 100%; /* Adjust to fit container */
+    height: auto;
+}
